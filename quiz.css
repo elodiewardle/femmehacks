@@ -1,13 +1,13 @@
 body{
-    background-image: url("beach.jpg");
-    background-color: #ffffff;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: url(beach.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   }
 
   h1{
-    position: absolute;
+    position: sticky;
     text-align: center;
     width: 1195px;
     height: 144px;
@@ -24,7 +24,7 @@ body{
   }
 
   button{
-    width: 300px;
+    width: 275px;
     height: 102px;
     left: 86px;
     top: 415px;
@@ -36,13 +36,43 @@ body{
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 350.5px;
+
+    position: absolute;
   }
 
   #stressedButton{
     background: #C4C4C4;
+    top: 50%;
+    left: 2%;
   }
 
   #boredButton{
     background: #9B90C8;
+    top: 60%;
+    left: 2%;
+  }
+
+  #angryButton{
+    background: #B95757;
+    top: 50%;
+    left: 42%;
+  }
+
+  #angryButton{
+    background: #3655C5;
+    top: 50%;
+    left: 42%;
+  }
+
+  #happyButton{
+    background: #9B90C8;
+    top: 50%;
+    left: 62%;
+  }
+
+  #otherButton{
+    background: #9B90C8;
+    top: 50%;
+    left: 78%;
   }
 
