@@ -1,0 +1,48 @@
+body{
+    background-color: white;
+}
+
+#red{
+    position: absolute;
+    width: 720px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+
+    background: #861F1F;
+    /*background: #FC4040;*/
+}
+
+#blue{
+    position: absolute;
+    width: 720px;
+    height: 300px;
+    left: 720px;
+    top: 0px;
+
+    background: #182D78;
+    /*background: #1947ED;*/
+}
+
+#green{
+    position: absolute;
+    width: 720px;
+    height: 300px;
+    left: 0px;
+    top: 300px;
+
+    background: #145908;
+    /*background: #3BE31F;*/
+    
+}
+
+#yellow{
+    position: absolute;
+    width: 720px;
+    height: 300px;
+    left: 720px;
+    top: 300px;
+
+    background: #6A670F;
+    /*background: #FDF424;*/
+}
