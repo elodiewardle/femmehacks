@@ -1,26 +1,58 @@
 //This code will expand an extract a ball to allow user to regulate and control their breathing during 
 
 
-//var context;
-//function init()
-//{
-    //context = myCanvas.getContext('2d');
-    //context.beginPath();
-   // context.fillStyle="#0000ff";
-    //Draws a circle of radius 20 at the coordinates 100, 100 on the canvas
-    //context.arc(100,100,20,0,Math.Pi*2,true); context.closePath();
-    //context.fill();
-
-
-
-//}
 
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
+var r = 20;
+var expanding = true;
+setInterval(circleSize, 250);//call the circleSize function after 500ms
 
-ctx.beginPath();
-ctx.rect(20, 40, 50, 50);
-ctx.fillStyle = "#FF0000";
-ctx.fill();
-ctx.closePath();
+
+//     ctx.fillText("Hello World!", 10, 50);
+
+
+
+function circleSize(){
+//expanding (inhale) and contracting (exhale)
+    if(expanding){
+        
+        console.log(r)
+        r+=5;
+        ctx.beginPath();
+        ctx.arc(250, 180, r, 0, 2*Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = "#FF0000";
+        ctx.fill();
+        ctx.closePath();
+        
+        
+        
+        if (r == 100){
+            expanding = false;
+        }
+    }
+    else if(!expanding){
+        
+        r-=5;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+
+        ctx.arc(250, 180, r, 0, 2*Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = "#0000ff";
+        ctx.fill();
+        ctx.closePath();
+        
+        
+        
+        if (r == 10){
+            expanding = true;
+            
+
+        }
+    }
+}
+
+

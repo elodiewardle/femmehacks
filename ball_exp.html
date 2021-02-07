@@ -5,15 +5,28 @@
         <title> Creating a Canvas </title>
         <style>
             * { padding: 0; margin: 0; }
-            canvas { background: rgb(206, 72, 72); display: block; margin: 0 auto; }
+            canvas { background: rgb(255, 255, 255); display: block; margin: 0 auto; }
+            button{
+                padding:0.5em 2em;
+            }
+            p{
+                font-size: 2em;
+            }
         </style>
 
     </head>
     <body>
-    
-    <canvas id= "myCanvas" width="500" height="400">
+    <p class="count">Regulate your breathing by inhaling as the ball expands and exhaling as the ball contracts</p>
+    <!-- <button type="button"class="start">Start</button><button type="button"class="stop">Stop</button> -->
 
+    <canvas id= "myCanvas" width="1000" height="1000">
     </canvas>
+
+    
+    <script src="Ball_expansion.js"?></script>
+    
+
     </body>
-    <script src="Ball_expansion.js"></script>
+
+    
 </html>
