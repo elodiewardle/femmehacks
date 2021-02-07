@@ -6,6 +6,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-        
+        <h1>How much time do you have?</h1>
+        <button class="b1" type = "button" onclick="goToGame(emotion, '5')">5 min</button>
+        <button class="b2" type = "button" onclick="goToGame(emotion, '10')">10 min</button>
+        <button class="b3" type = "button" onclick="goToGame(emotion, '15')">15 min</button>
+        <button class="b4" type = "button" onclick="goToGame(emotion, '20')">20 min</button>
+
+        <script>
+            var emotion = parent.document.URL.substring(parent.document.URL.indexOf('?') + 1, parent.document.URL.length); 
+
+            function goToGame(emotion, time){
+                if (emotion === "stressed"){
+                    var newPage = "ball_exp.html?" + time;
+                    window.location.href = newPage;
+                }
+                else if (emotion === "bored"){
+                    var newPage = "ball_exp.html?" + time;
+                    window.location.href = newPage;
+                }
+                else if (emotion === "angry"){
+                    var newPage = "ball_exp.html?" + time;
+                    window.location.href = newPage;
+                }
+                else{
+                    var newPage = "ball_exp.html?" + time;
+                    window.location.href = newPage;
+                }
+            }
+        </script>
     </body>
 </html>

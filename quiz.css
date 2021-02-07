@@ -38,41 +38,25 @@ body{
     border-radius: 350.5px;
 
     position: absolute;
+    top: 50%;
   }
 
-  #stressedButton{
+  .b1{
     background: #C4C4C4;
-    top: 50%;
-    left: 2%;
+    left: 3%;
   }
 
-  #boredButton{
+  .b2{
     background: #9B90C8;
-    top: 60%;
-    left: 2%;
+    left: 28%;
   }
 
-  #angryButton{
+  .b3{
     background: #B95757;
-    top: 50%;
-    left: 42%;
+    left: 53%;
   }
 
-  #angryButton{
+  .b4{
     background: #3655C5;
-    top: 50%;
-    left: 42%;
-  }
-
-  #happyButton{
-    background: #9B90C8;
-    top: 50%;
-    left: 62%;
-  }
-
-  #otherButton{
-    background: #9B90C8;
-    top: 50%;
     left: 78%;
   }
-
